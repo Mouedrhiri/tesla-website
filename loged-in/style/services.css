@@ -1,0 +1,241 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #2e2e2e;
+}
+.dark-theme {
+  --primary-color: #2e2e2e;
+  --secondary-color: white;
+}
+@font-face {
+  font-family: Tesla;
+  src: url("./FONTS/TESLA.ttf");
+}
+body {
+  background-color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  justify-content: center;
+}
+#icon {
+  width: 30px;
+  cursor: pointer;
+  float: left;
+  margin-top: -60px;
+  margin-left: 620px;
+}
+nav {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  background-color: var(--primary-color);
+  border-bottom: gray 2px solid;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+nav ul {
+  height: 60px;
+}
+nav ul li {
+  display: inline;
+  float: right;
+  padding: 25px;
+  margin-top: -5px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: Tesla;
+  font-weight: bold;
+}
+.dropbtn {
+  background-color: #e82127;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #707070;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #ff373d;
+}
+.active a {
+  background-color: #e82127;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+footer img {
+  margin-top: 10px;
+  width: 9%;
+  margin-left: 720px;
+}
+footer p {
+  text-align: center;
+  font-family: Tesla;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  margin-top: 150px;
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  transform: transition 0.2s;
+  background-color: var(--primary-color);
+  list-style-type: none;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.price .header {
+  border-top-right-radius: 50px;
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  border-bottom-left-radius: 50px;
+  color: black;
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: TESLA;
+  background-color: #e72026;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.text {
+  padding-top: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-family: TESLA;
+}
+.container {
+  margin-top: 680px;
+}
+.container p {
+  text-align: center;
+  font-size: 35px;
+  color: var(--secondary-color);
+  font-family: TESLA;
+}
+.container1 img {
+  width: 50%;
+  margin-left: 400px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 12px 0 var(--secondary-color);
+}
+.container1 p {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 35px;
+  font-size: 25px;
+  font-weight: 50;
+}
+.container1 button {
+  font-family: TESLA;
+  font-size: 25px;
+  margin-left: 680px;
+  padding: 20px;
+  width: 250px;
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 3px var(--secondary-color) solid;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.container1 button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.container2 {
+  margin-top: 50px;
+  background-color: #e72026;
+  height: 340px;
+}
+.container2 img {
+  float: left;
+  width: 350px;
+  margin-top: -30px;
+}
+.container2 p {
+  float: right;
+  text-align: center;
+  color: white;
+  font-family: TESLA;
+  font-size: 37px;
+  padding-top: 70px;
+  padding-right: 150px;
+}
